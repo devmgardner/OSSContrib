@@ -1,0 +1,54 @@
+n is 15
+temp is [1, 2, 2, 3, 3]
+position 15 does not exist in temp, processing
+range to process is range(1,15)
+----current number in range is 1
+	----position 1 in temp exists: 1
+----current number in range is 2
+	----position 2 in temp exists: 2
+----current number in range is 3
+	----position 3 in temp exists: 2
+----current number in range is 4
+	----position 4 in temp exists: 3
+----current number in range is 5
+	----position 5 in temp exists: 3
+----current number in range is 6
+	----position 6 in temp does not exist, appending
+		last value in current list is 3
+		next value to append is 4
+			number in position 4 in temp is 3
+				appending 3 4s
+				processed 6, temp is now [1, 2, 2, 3, 3, 4, 4, 4]
+				length of temp is now 8
+----current number in range is 7
+	----position 7 in temp exists: 4
+----current number in range is 8
+	----position 8 in temp exists: 4
+----current number in range is 9
+	----position 9 in temp does not exist, appending
+		last value in current list is 4
+		next value to append is 5
+			number in position 5 in temp is 3
+				appending 3 5s
+				processed 9, temp is now [1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5]
+				length of temp is now 11
+----current number in range is 10
+	----position 10 in temp exists: 5
+----current number in range is 11
+	----position 11 in temp exists: 5
+----current number in range is 12
+	----position 12 in temp does not exist, appending
+		last value in current list is 5
+		next value to append is 6
+			number in position 6 in temp is 4
+				appending 4 6s
+				processed 12, temp is now [1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 6]
+				length of temp is now 15
+----current number in range is 13
+	----position 13 in temp exists: 6
+----current number in range is 14
+	----position 14 in temp exists: 6
+----current number in range is 15
+	----position 15 in temp exists: 6
+final temp is [1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 6]
+Number in position 15 in the Golomb sequence is 6
