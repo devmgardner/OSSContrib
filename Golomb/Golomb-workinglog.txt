@@ -1,7 +1,7 @@
-n is 15
+n is 50
 temp is [1, 2, 2, 3, 3]
-position 15 does not exist in temp, processing
-range to process is range(1,15)
+position 50 does not exist in temp, processing
+range to process is range(1,50)
 ----current number in range is 1
 	----position 1 in temp exists: 1
 ----current number in range is 2
@@ -50,5 +50,117 @@ range to process is range(1,15)
 	----position 14 in temp exists: 6
 ----current number in range is 15
 	----position 15 in temp exists: 6
-final temp is [1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 6]
-Number in position 15 in the Golomb sequence is 6
+----current number in range is 16
+	----position 16 in temp does not exist, appending
+		last value in current list is 6
+		next value to append is 7
+			number in position 7 in temp is 4
+				appending 4 7s
+				processed 16, temp is now [1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7]
+				length of temp is now 19
+----current number in range is 17
+	----position 17 in temp exists: 7
+----current number in range is 18
+	----position 18 in temp exists: 7
+----current number in range is 19
+	----position 19 in temp exists: 7
+----current number in range is 20
+	----position 20 in temp does not exist, appending
+		last value in current list is 7
+		next value to append is 8
+			number in position 8 in temp is 4
+				appending 4 8s
+				processed 20, temp is now [1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 8]
+				length of temp is now 23
+----current number in range is 21
+	----position 21 in temp exists: 8
+----current number in range is 22
+	----position 22 in temp exists: 8
+----current number in range is 23
+	----position 23 in temp exists: 8
+----current number in range is 24
+	----position 24 in temp does not exist, appending
+		last value in current list is 8
+		next value to append is 9
+			number in position 9 in temp is 5
+				appending 5 9s
+				processed 24, temp is now [1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 8, 9, 9, 9, 9, 9]
+				length of temp is now 28
+----current number in range is 25
+	----position 25 in temp exists: 9
+----current number in range is 26
+	----position 26 in temp exists: 9
+----current number in range is 27
+	----position 27 in temp exists: 9
+----current number in range is 28
+	----position 28 in temp exists: 9
+----current number in range is 29
+	----position 29 in temp does not exist, appending
+		last value in current list is 9
+		next value to append is 10
+			number in position 10 in temp is 5
+				appending 5 10s
+				processed 29, temp is now [1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 8, 9, 9, 9, 9, 9, 10, 10, 10, 10, 10]
+				length of temp is now 33
+----current number in range is 30
+	----position 30 in temp exists: 10
+----current number in range is 31
+	----position 31 in temp exists: 10
+----current number in range is 32
+	----position 32 in temp exists: 10
+----current number in range is 33
+	----position 33 in temp exists: 10
+----current number in range is 34
+	----position 34 in temp does not exist, appending
+		last value in current list is 10
+		next value to append is 11
+			number in position 11 in temp is 5
+				appending 5 11s
+				processed 34, temp is now [1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 8, 9, 9, 9, 9, 9, 10, 10, 10, 10, 10, 11, 11, 11, 11, 11]
+				length of temp is now 38
+----current number in range is 35
+	----position 35 in temp exists: 11
+----current number in range is 36
+	----position 36 in temp exists: 11
+----current number in range is 37
+	----position 37 in temp exists: 11
+----current number in range is 38
+	----position 38 in temp exists: 11
+----current number in range is 39
+	----position 39 in temp does not exist, appending
+		last value in current list is 11
+		next value to append is 12
+			number in position 12 in temp is 6
+				appending 6 12s
+				processed 39, temp is now [1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 8, 9, 9, 9, 9, 9, 10, 10, 10, 10, 10, 11, 11, 11, 11, 11, 12, 12, 12, 12, 12, 12]
+				length of temp is now 44
+----current number in range is 40
+	----position 40 in temp exists: 12
+----current number in range is 41
+	----position 41 in temp exists: 12
+----current number in range is 42
+	----position 42 in temp exists: 12
+----current number in range is 43
+	----position 43 in temp exists: 12
+----current number in range is 44
+	----position 44 in temp exists: 12
+----current number in range is 45
+	----position 45 in temp does not exist, appending
+		last value in current list is 12
+		next value to append is 13
+			number in position 13 in temp is 6
+				appending 6 13s
+				processed 45, temp is now [1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 8, 9, 9, 9, 9, 9, 10, 10, 10, 10, 10, 11, 11, 11, 11, 11, 12, 12, 12, 12, 12, 12, 13, 13, 13, 13, 13, 13]
+				length of temp is now 50
+----current number in range is 46
+	----position 46 in temp exists: 13
+----current number in range is 47
+	----position 47 in temp exists: 13
+----current number in range is 48
+	----position 48 in temp exists: 13
+----current number in range is 49
+	----position 49 in temp exists: 13
+----current number in range is 50
+	----position 50 in temp exists: 13
+final temp is [1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 8, 9, 9, 9, 9, 9, 10, 10, 10, 10, 10, 11, 11, 11, 11, 11, 12, 12, 12, 12, 12, 12, 13, 13, 13, 13, 13, 13]
+Number in position 50 in the Golomb sequence is 13

@@ -10,11 +10,16 @@ fname = f'{currentdir}/Golomb-workinglog.txt'
 fhand = open(fname, 'w')
 fhand.close()
 fhand = open(fname, 'r+')
+dname = f'{currentdir}/test.txt'
+dhand = open(dname, 'w')
+dhand.close()
+dhand = open(dname, 'r+')
 #
 def golomb(n):
     n = int(n)
     fhand.write(f'n is {n}\n')
-    if n == 1:return 1
+    if n == 1:
+        return 1
     temp = [1, 2, 2, 3, 3]
     fhand.write(f'temp is {temp}\n')
     while len(temp) < n:
@@ -39,13 +44,15 @@ def golomb(n):
                 #fhand.write(f'item in temp at position {lastval} is {temp[lastval-1]}\n')
                 fhand.write(f'\t\t\tnumber in position {lastval+1} in temp is {temp[lastval]}\n')
                 fhand.write(f'\t\t\t\tappending {temp[lastval]} {lastval+1}s\n')
-                for x in range(temp[lastval]):temp.append(lastval + 1)
+                for x in range(temp[lastval]):
+                    temp.append(lastval + 1)
                 #fhand.write(f'\t\t\t\tafter processing {i}, temp is {temp}\n')
                 fhand.write(f'\t\t\t\tprocessed {i+1}, temp is now {temp}\n')
                 fhand.write(f'\t\t\t\tlength of temp is now {len(temp)}\n')
     fhand.write(f'final temp is {temp}\n')
     fhand.write(f'Number in position {n} in the Golomb sequence is {temp[n-1]}')
     end = timer()
+    for i in temp:dhand.write(f'{i}\n')
     return (temp[n-1], end)
     #while not (n+1) in temp:
     #    fhand.write(f'n + 1 is not in {temp}\n')
