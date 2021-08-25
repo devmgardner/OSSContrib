@@ -1,0 +1,6 @@
+https://github.com/ytdl-org/youtube-dl/blob/master/youtube_dl/YoutubeDL.py
+https://github.com/ytdl-org/youtube-dl/issues/29849
+
+https://www.codetriage.com/sympy/sympy
+https://www.codetriage.com/odoo/odoo
+https://www.codetriage.com/pydata/pandas
